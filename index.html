@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Brasa Burger — site demonstrativo de hamburgueria criado para portfólio."
+    />
+
+    <title>Brasa Burger | Sabor que acende sua fome</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+    <header class="header" id="topo">
+      <div class="container nav">
+        <a href="#inicio" class="logo" aria-label="Brasa Burger, início"
+          >BRASA<span>BURGER</span
+          ><span class="logo-flame" aria-hidden="true">🔥</span></a
+        >
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
+
+        <nav id="navLinks" class="nav-links" aria-label="Menu principal">
+          <a href="#inicio">Início</a><a href="#cardapio">Cardápio</a
+          ><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+          <a href="#cardapio" class="nav-cta">Ver cardápio</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="eyebrow-dot"></span> FEITO NA BRASA, FEITO COM
+              PAIXÃO</span
+            >
+
+            <h1>O SABOR QUE <em>ACENDE</em> SUA FOME.</h1>
+
+            <p>
+              Hambúrgueres suculentos, ingredientes selecionados e aquele sabor
+              inesquecível a cada mordida.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#cardapio" class="btn btn-primary"
+                >Explorar cardápio <span aria-hidden="true">↗</span></a
+              ><a href="#sobre" class="btn btn-outline">Conheça a Brasa</a>
+            </div>
+
+            <div class="hero-stats">
+              <div><strong>100%</strong><span>Sabor de verdade</span></div>
+              <div><strong>🔥</strong><span>Preparado na brasa</span></div>
+              <div><strong>❤️</strong><span>Feito com carinho</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-glow"></div>
+
+            <div class="hero-burger">
+              <img
+                src="imagens/brasa-classico.png"
+                alt="Hambúrguer artesanal Brasa Burger"
+                class="hero-foto"
+              />
+            </div>
+
+            <span class="hero-sticker"
+              >SABOR<br /><strong>DE RESPEITO!</strong></span
+            ><span class="hero-caption"
+              >HAMBÚRGUER ARTESANAL • BRASA BURGER</span
+            >
+          </div>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true">
+        <div>
+          🔥 SABOR DE VERDADE <span>✦</span> 🍔 BURGERS ARTESANAIS
+          <span>✦</span> 🔥 FEITO NA BRASA <span>✦</span> 🍟 COMBOS
+          IRRESISTÍVEIS <span>✦</span> 🔥 SABOR DE VERDADE <span>✦</span>
+        </div>
+      </div>
+      <section class="section menu-section" id="cardapio">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">ESCOLHA SEU FAVORITO</span>
+              <h2>O NOSSO <em>CARDÁPIO</em></h2>
+            </div>
+            <p>
+              Dos clássicos aos mais ousados: aqui tem um burger para cada fome.
+            </p>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar cardápio">
+            <button
+              class="filter active"
+              data-filter="todos"
+              aria-pressed="true"
+            >
+              Todos</button
+            ><button class="filter" data-filter="burgers" aria-pressed="false">
+              Burgers</button
+            ><button class="filter" data-filter="combos" aria-pressed="false">
+              Combos</button
+            ><button
+              class="filter"
+              data-filter="acompanhamentos"
+              aria-pressed="false"
+            >
+              Acompanhamentos
+            </button>
+          </div>
+          <div class="menu-grid">
+            <article class="food-card" data-category="burgers">
+              <div class="food-image food-1">
+                <img
+                  src="imagens/brasa-classico.png"
+                  alt="Hambúrguer Brasa Clássico com queijo e alface"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+
+                <span class="food-badge">MAIS PEDIDO</span>
+              </div>
+
+              <div class="food-body">
+                <h3>Brasa Clássico</h3>
+                <p>
+                  Pão macio, burger artesanal, queijo cheddar, alface e molho
+                  especial.
+                </p>
+                <div class="food-bottom">
+                  <strong>R$ 29,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Brasa Clássico"
+                    aria-label="Ver informações sobre Brasa Clássico"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="food-card" data-category="burgers">
+              <!-- BACON INFERNO -->
+
+              <!-- BACON INFERNO -->
+              <div class="food-image food-2">
+                <img
+                  src="imagens/bacon-inferno.png"
+                  alt="Hambúrguer com bacon e cheddar"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="food-body">
+                <h3>Bacon Inferno</h3>
+
+                <h3>Bacon Inferno</h3>
+                <p>
+                  Hambúrguer suculento, cheddar cremoso, bacon crocante e
+                  barbecue.
+                </p>
+                <div class="food-bottom">
+                  <strong>R$ 36,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Bacon Inferno"
+                    aria-label="Ver informações sobre Bacon Inferno"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="food-card" data-category="burgers">
+              <!-- CHEDDAR EXPLOSIVO -->
+              <div class="food-image food-3">
+                <img
+                  src="imagens/cheddar-explosivo.png"
+                  alt="Hambúrguer com cheddar duplo"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+
+                <span class="food-badge">QUEIJUDO</span>
+              </div>
+
+              <div class="food-body">
+                <h3>Cheddar Explosivo</h3>
+
+                <p>
+                  Blend artesanal, cheddar duplo, cebola caramelizada e pão
+                  brioche.
+                </p>
+                <div class="food-bottom">
+                  <strong>R$ 34,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Cheddar Explosivo"
+                    aria-label="Ver informações sobre Cheddar Explosivo"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="food-card" data-category="combos">
+              <div class="food-image food-4">
+                <img
+                  src="imagens/combo-brasa.png"
+                  alt="Combo com hambúrguer, batata frita e refrigerante"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="food-body">
+                <h3>Combo Brasa</h3>
+                <p>
+                  Brasa Clássico, batata crocante e refrigerante para completar.
+                </p>
+                <div class="food-bottom">
+                  <strong>R$ 44,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Combo Brasa"
+                    aria-label="Ver informações sobre Combo Brasa"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="food-card" data-category="acompanhamentos">
+              <div class="food-image food-5">
+                <img
+                  src="imagens/batata-vulcao.png"
+                  alt="Batatas fritas cobertas com cheddar e bacon"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="food-body">
+                <h3>Batata Vulcão</h3>
+                <p>Porção generosa de batatas com cheddar cremoso e bacon.</p>
+                <div class="food-bottom">
+                  <strong>R$ 24,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Batata Vulcão"
+                    aria-label="Ver informações sobre Batata Vulcão"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="food-card" data-category="combos">
+              <div class="food-image food-6">
+                <img
+                  src="imagens/combo-dupla.png"
+                  alt="Combo com dois hambúrgueres, batatas fritas e bebidas"
+                  class="imagem-produto"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="food-body">
+                <h3>Combo Dupla Brasa</h3>
+                <p>
+                  Dois burgers clássicos, duas bebidas e uma batata para
+                  dividir.
+                </p>
+                <div class="food-bottom">
+                  <strong>R$ 79,90</strong
+                  ><button
+                    class="food-action"
+                    data-product="Combo Dupla Brasa"
+                    aria-label="Ver informações sobre Combo Dupla Brasa"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="demo-note">
+            * Cardápio e preços fictícios, utilizados apenas para demonstração.
+          </p>
+        </div>
+      </section>
+      <section class="about-section" id="sobre">
+        <div class="container about-grid">
+          <div class="about-art">
+            <img
+              src="imagens/preparo-brasa.png"
+              alt="Hambúrgueres sendo preparados em uma chapa quente"
+              class="about-foto"
+              loading="lazy"
+            />
+
+            <div class="about-tag">
+              NASCEMOS PARA<br /><strong>FAZER DIFERENTE.</strong>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="section-kicker">MAIS QUE UM HAMBÚRGUER</span>
+            <h2>A NOSSA PAIXÃO É <em>SERVIR SABOR.</em></h2>
+            <p>
+              Na Brasa Burger, acreditamos que uma boa refeição vai além dos
+              ingredientes. É sobre reunir pessoas, compartilhar momentos e
+              transformar uma simples mordida em uma experiência memorável.
+            </p>
+            <p>
+              Por isso, cada burger é pensado com atenção aos detalhes, do pão
+              ao último toque de molho.
+            </p>
+            <a href="#contato" class="btn btn-primary">Fale com a gente ↗</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section" id="contato">
+        <div class="container contact-box">
+          <div>
+            <span class="section-kicker">BATEU AQUELA FOME?</span>
+            <h2>VEM PRA <em>BRASA!</em></h2>
+            <p>
+              Curtiu nosso cardápio? Esta é uma demonstração de como sua
+              hamburgueria pode apresentar seus produtos e receber clientes pela
+              internet.
+            </p>
+
+            <div class="contact-details">
+              <span> 📍 Localização ilustrativa — Indaiatuba, SP </span>
+
+              <span> 🕒 Horários ilustrativos — Ter. a dom., 18h às 23h </span>
+            </div>
+
+            <button class="btn btn-primary" id="contactButton">
+              💬 Simular contato pelo WhatsApp
+            </button>
+          </div>
+
+          <div class="contact-image">
+            <img
+              src="imagens/contato-brasa.png"
+              alt="Hambúrguer artesanal da Brasa Burger"
+              class="contact-foto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <a href="#inicio" class="logo">BRASA<span>BURGER</span>🔥</a>
+        <p>
+          Site fictício criado para demonstração de serviços de desenvolvimento
+          web.
+        </p>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
